@@ -4,67 +4,17 @@
     font-family:'Inter', sans-serif;
 }
 
-body{
-    background-color:#8d9095;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+    height: 100%;
 }
 
 main{
     margin-top:100px;
 }
-main h1{
-    text-align:center;
-    font-weight:900;
-    font-size: 96px;
-    margin-top:0px;
-    color:#faebd7;
-}
 
-main h3{
-    text-align: center;
-    font-weight:400;
-    font-size:36px;
-    margin-bottom:30px;
-    color:#faebd7;
-    
-}
-
-.cards h2{
-    text-align: center;
-    font-weight:600;
-    font-size:48px;
-    color:#faebd7;
-    
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 20px;
-    place-items: center;
-    
-
-}
-
-.cards img {
-    height: 30vw;
-    transition: all .2s ease-in-out;
-}
-
-.cards img:hover {
-    transform: scale(1.02);
-}
-
-.cards__columna {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-
+.carousel-item img {
+    height: 300px;
+    object-fit:scale-down;
 }
 
 .footer{
@@ -74,7 +24,9 @@ main h3{
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    margin-top: auto;
+    /* position:absolute;
+    bottom:0;
+    width:100%; */
 }
 
 .footer img{
@@ -127,46 +79,11 @@ footer a:visited{
 
 .catalogo img {
     height: 100%;
-    transition: all .5s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 .catalogo img:hover {
-    transform: scale(1.1);
-}
-
-
-
-.catalogo__boton {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-
-.catalogo__descarga {
-    display: flex;
-    justify-content: center;
-    place-items: center;
-    height: 15px;
-    width: 224px;
-    background: linear-gradient(to bottom, #39a82a, #339726);
-    font-family:'Inter', sans-serif;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 8px;
-    border-radius: 5px;
-    transition: 0.9s;
-}
-
-.catalogo__descarga:hover {
-    display: flex;
-    justify-content: center;
-    place-items: center;
-    height: 15px;
-    width: 224px;
-    background: linear-gradient(to bottom, rgb(149, 226, 138), rgb(57, 224, 32));
-    color:#222222;
+    transform: scale(1.03);
 }
 
 .contacto__texto {
@@ -324,7 +241,7 @@ input[type='email'] {
         align-items: center;
     }
 
-    main h1{
+    /* main h1{
         text-align:center;
         font-weight:900;
         font-size: 9vw;
@@ -339,7 +256,7 @@ input[type='email'] {
         margin-bottom:30px;
         color:#faebd7;
         
-    }
+    } */
 
     .cards {
         display: grid;

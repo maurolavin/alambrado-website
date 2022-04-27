@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-secondary d-flex flex-column min-vh-100">
     <header class="cabecera">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -34,9 +34,11 @@
           </nav>
     </header>
     <main>
-        <div class="catalogo__boton">
-        <a href="https://drive.google.com/file/d/1GBgsaHSd8_J7Bxi48FLTLme5HwqNHOH1/view?usp=sharing" target="_blank" class="catalogo__descarga">DESCARGÁ NUESTRO CATÁLOGO</a>
-        </div>
+      <div class="container text-center">
+        <a href="https://drive.google.com/file/d/1GBgsaHSd8_J7Bxi48FLTLme5HwqNHOH1/view?usp=sharing" target="_blank" class="catalogo__descarga text-decoration-none">
+          <button type="button" class="btn btn-success d-inline my-5">Descargá nuestro catálogo</button>
+        </a>
+      </div>         
             <section class="catalogo">
                 <img src="../imagenes/catalogo/1005_2ln.png" alt="Chupin elastizado, localizado, nevado y con bigotes" class="catalogo__jean">
                 <img src="../imagenes/catalogo/1012_1r.png" alt="Chupin azul elastizado y localizado con roturas" class="catalogo__jean">
@@ -46,7 +48,7 @@
                 <img src="../imagenes/catalogo/1039_nlr.png" alt="Chupin elastizado negro localizado con roturas" class="catalogo__jean">
             </section>
         <main>
-    <footer class="footer">
+    <footer class="footer mt-auto">
         <img src="../imagenes/logo-alambrado.svg" class="footer__img">
         <ul class="footer__list">
             <li class="footer__list__item"><a href="https://instagram.com/alambradojeans" target="_blank">INSTAGRAM</a></li>
