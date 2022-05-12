@@ -1,0 +1,9 @@
+.logo__redes {
+    @extend %color-blanco;
+    width: 30px;
+    &__facebook{
+        @extend %color-blanco;
+        height: 30px;
+        justify-content: center;
+    }
+}

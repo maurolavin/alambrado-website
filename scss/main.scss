@@ -2,14 +2,9 @@
 @import './components/contacto';
 @import './components/footer';
 @import './components/header';
-
-$cien-altura: 100%;
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'Inter', sans-serif;
-}
+@import './components/faq';
+@import './components/general';
+@import './components/about';
 
 body {
     height: $cien-altura;
@@ -68,19 +63,13 @@ main{
 input[type='text'] {
     margin: 10px;
     border: 0;
-    height: 30px;
-    width: 20vw;
-    border-radius: 5px;
-    padding: 10px 10px;
+    @include input-form;
 }
 
 input[type='email'] {
     margin: 10px;
     border: 0;
-    height: 30px;
-    width: 20vw;
-    border-radius: 5px;
-    padding: 10px 10px;
+    @include input-form;
 }
 
 
@@ -106,63 +95,20 @@ input[type='email'] {
     color: #eee8e8;
 }
 
-.faq {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-.faq__pregunta {
-    text-align: center;
-    font-weight:600;
-    font-size:36px;
-    margin-bottom: 20px;
-    color:#faebd7;
-}
-
-.faq__respuesta {
-    text-align: center;
-    font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #faebd7;
-}
-
-.faq__anchor,
-.faq__anchor:visited {
-    text-decoration: underline;
-    color: #faebd7;
-}
-
-.faq__mapa {
-    margin: 0 auto;
-    height: 300px;
-    width: 60vw;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.sobre-nosotros {
-    transition: ease-in-out .5s;
-    cursor: default;
-}
-
 .logo__blanco {
-    height: 150px;
+    height: 60px;
+}
+
+.card__sobrenosotros {
+    width: 70%;
+    max-width: 90%;
 }
 
 .sobre-nosotros a,
 .sobre-nosotros a:link,
 .sobre-nosotros a:visited {
-    text-decoration: none;
-    color: #faebd7;
-}
-
-.sobre-nosotros:hover {
-    color: linear-gradient(#6d9af5, #e1e2d3);
-    background: -webkit-linear-gradient(#c6d6f7, #dadde9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+    text-decoration: map-get($no-decoration, no-decoration);
+    color: map-get($no-decoration, color);
 }
 
 @media screen and (max-width: 910px) {
