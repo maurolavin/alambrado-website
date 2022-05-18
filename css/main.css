@@ -14,31 +14,17 @@
   display: flex;
   flex-flow: column wrap; }
 
-.faq__pregunta {
-  text-align: center;
-  font-weight: 600;
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #faebd7; }
-
-.faq__respuesta {
-  text-align: center;
-  font-weight: 400;
-  font-size: 18px;
-  margin-bottom: 30px;
-  color: #faebd7; }
+.faq__mapa {
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 5px;
+  display: block; }
 
 .faq__anchor,
 .faq__anchor:visited {
   text-decoration: underline;
   color: #faebd7; }
-
-.faq__mapa {
-  margin: 0 auto;
-  height: 300px;
-  width: 60vw;
-  border-radius: 10px;
-  margin-bottom: 20px; }
 
 * {
   margin: 0;
@@ -53,9 +39,6 @@
 
 body {
   height: 100%; }
-
-main {
-  margin-top: 20px; }
 
 .carousel-item img {
   height: 300px;
