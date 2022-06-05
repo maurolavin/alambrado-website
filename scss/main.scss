@@ -32,65 +32,6 @@ body {
     transform: scale(1.03);
 }
 
-.contacto__texto {
-    font-size: 26px;
-    color: #ffffff;
-    font-weight: 600;
-    text-align: center;
-    padding: 20px;
-}
-
-.contacto__formulario {
-    display: grid;
-    justify-content: center;
-    flex-flow: column wrap;
-    margin: 0 auto;
-}
-
-::placeholder {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #222222;
-    text-align: center;
-
-}
-
-input[type='text'] {
-    margin: 10px;
-    border: 0;
-    @include input-form;
-}
-
-input[type='email'] {
-    margin: 10px;
-    border: 0;
-    @include input-form;
-}
-
-
-.contacto__boton {
-    background-color: #eee8e8;
-    color: #1d1d1d;
-    cursor: pointer;
-    padding: 10px 10px;
-    border: 0;
-    height: 50px;
-    width: 20vw;
-    border-radius: 5px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
-    transition: ease-in-out .3s;
-}
-
-.contacto__boton:hover {
-    background-color: #39a82a;
-    color: #eee8e8;
-}
-
 .logo__blanco {
     height: 60px;
 }
